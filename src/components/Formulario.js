@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Formulario.module.css';
 import useSelect from '../hooks/useSelect';
 
@@ -43,5 +44,8 @@ const Formulario = ({actualizarcategoria}) => {
         </div>
       );
 }
- 
+
+Formulario.propTypes = {
+    actualizarcategoria: PropTypes.func.isRequired,
+};
 export default Formulario;
